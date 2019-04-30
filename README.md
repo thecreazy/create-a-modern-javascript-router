@@ -1,6 +1,6 @@
 ![Blog Image](/docs/blog.png)
 
-This project is written for the medium article: 
+This project is written for the medium article: [Create a modern javascript router](https://medium.com/javascript-by-doing/create-a-modern-javascript-router-805fc14d084d)
 
 ## Dev stuff
 
