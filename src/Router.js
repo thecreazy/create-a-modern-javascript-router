@@ -61,7 +61,6 @@ class Router {
   };
 
   listen = () => {
-    this.current = this.getFragment();
     clearInterval(this.interval);
     this.interval = setInterval(this.interval, 50);
   };
@@ -69,14 +68,17 @@ class Router {
   interval = () => {
     if (this.current === this.getFragment()) return;
     this.current = this.getFragment();
-    this.router.forEach(route => {
+
+    this.routes.some(route => {
       const match = this.current.match(route.path);
       if (match) {
         match.shift();
         route.cb.apply({}, match);
+        return match;
       }
+      return false;
     });
   };
 }
 
-export default new Router();
+export default Router;
