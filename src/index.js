@@ -13,7 +13,7 @@ router
     alert('welcome in about page');
   })
   .add(/products\/(.*)\/specification\/(.*)/, (id, specification) => {
-    console.log('products', id, specification);
+    alert(`products: ${id} specification: ${specification}`);
   })
   .add('', () => {
     // general controller
