@@ -1,0 +1,38 @@
+{
+  "name": "create-a-modern-javascript-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint:js": "eslint ./src  -c .eslintrc --ext js,jsx --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javascript-by-doing/create-a-modern-javascript-router.git"
+  },
+  "keywords": [
+    "javascript",
+    "router",
+    "example"
+  ],
+  "author": "canella riccardo <canella_riccardo@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javascript-by-doing/create-a-modern-javascript-router/issues"
+  },
+  "homepage": "https://github.com/javascript-by-doing/create-a-modern-javascript-router#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.17.0"
+  }
+}

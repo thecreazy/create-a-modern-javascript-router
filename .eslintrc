@@ -1,0 +1,28 @@
+
+{
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "parser": "babel-eslint",
+    "rules": {
+      "prettier/prettier": ["warn", {
+        "printWidth": 100,
+        "singleQuote": true,
+        "useTabs": false,
+        "tabWidth": 2
+      }, {
+        "usePrettierrc": false
+      }],
+      "max-len": ["warn", 200]
+    },
+    "env": {
+      "browser": true
+    },
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "./config/webpack-common-config.js"
+        }
+      }
+    }
+  }
+  
