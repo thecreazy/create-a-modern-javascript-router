@@ -1,4 +1,5 @@
 class Router {
+  
   routes = [];
 
   mode = null;
@@ -13,6 +14,7 @@ class Router {
   }
 
   add = (path, cb) => {
+    path = path ? new RegExp(this.clearSlashes(path)) : ''
     this.routes.push({ path, cb });
     return this;
   };
@@ -79,6 +81,7 @@ class Router {
       return false;
     });
   };
+
 }
 
 export default Router;
