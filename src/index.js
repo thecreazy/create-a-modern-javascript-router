@@ -15,6 +15,9 @@ router
   .add(/products\/(.*)\/specification\/(.*)/, (id, specification) => {
     alert(`products: ${id} specification: ${specification}`);
   })
+  .add('/u/(.*)', (username) => {
+    alert(`username: ${username}`)
+  })
   .add('', () => {
     // general controller
     console.log('welcome in catch all controller');
